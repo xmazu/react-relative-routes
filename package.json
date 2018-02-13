@@ -35,12 +35,16 @@
   "types": "./lib/index.d.ts",
   "main": "lib/index.js",
   "devDependencies": {
+    "@types/enzyme": "^3.1.9",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
     "@types/history": "^4.6.2",
     "@types/jest": "^22.1.2",
     "@types/prop-types": "^15.5.2",
     "@types/react": "^16.0.38",
     "@types/react-dom": "^16.0.4",
     "@types/react-router-dom": "^4.2.4",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "history": "^4.7.2",
     "jest": "^22.3.0",
     "prop-types": "^15.6.0",
@@ -63,6 +67,7 @@
     "path-to-regexp": "^2.1.0"
   },
   "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTestsFramework.js",
     "transform": {
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },

@@ -19,9 +19,9 @@ export namespace RelativeNavLink {
 
 export class RelativeNavLink<T> extends React.Component<RelativeNavLink.Props<T>> {
   render() {
-    const { children, params, pattern, to, ...restProps } = this.props;
+    const { children, params, pattern, ...restProps } = this.props;
     return (
-      <NavLink to={to ? to : pattern.compile(params)} {...restProps}>
+      <NavLink to={pattern.compile(params)} {...restProps}>
         {children}
       </NavLink>
     );
