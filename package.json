@@ -1,0 +1,81 @@
+{
+  "name": "react-relative-routes",
+  "version": "0.0.1",
+  "description": "",
+  "author": {
+    "name": "Maciej Kański",
+    "email": "xmazu@yahoo.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xmazu/react-relative-routes"
+  },
+  "bugs": {
+    "url": "https://github.com/xmazu/react-relative-routes/issues"
+  },
+  "keywords": [
+    "react",
+    "router",
+    "react-router",
+    "relative",
+    "switch",
+    "config",
+    "react-relative-routes"
+  ],
+  "files": [
+    "lib",
+    "LICENSE"
+  ],
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "rimraf lib && tsc",
+    "test": "jest"
+  },
+  "types": "./lib/index.d.ts",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "@types/history": "^4.6.2",
+    "@types/jest": "^22.1.2",
+    "@types/prop-types": "^15.5.2",
+    "@types/react": "^16.0.38",
+    "@types/react-dom": "^16.0.4",
+    "@types/react-router-dom": "^4.2.4",
+    "history": "^4.7.2",
+    "jest": "^22.3.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^22.0.4",
+    "tslint": "^5.9.1",
+    "tslint-react": "^3.5.0",
+    "typescript": "^2.7.1"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "dependencies": {
+    "path-to-regexp": "^2.1.0"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/lib/"
+    ],
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  }
+}
