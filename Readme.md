@@ -13,13 +13,13 @@
 ## Installation
 
 ```shell
-yarn add react-inline-suggest
+yarn add react-relative-routes
 ```
 
 or
 
 ```shell
-npm install react-inline-suggest --save
+npm install react-relative-routes --save
 ```
 
 
@@ -68,11 +68,10 @@ const Links = () => (
 
 ## FAQ
 
-### Why custom RelativeSwitch instead of react-router's Switch?
+### Why custom `<RelativeSwitch />` instead of react-router's Switch?
 
 `<Switch />` does not work with custom `<Route />` components. Since we need to use
-custom props for passing the **pattern** there is a need to use `<RelativeLink />` or 
-`<RelativeNavLink />
+custom props for passing the **pattern** there is a need to use `<RelativeLink />` or `<RelativeNavLink />`.
 
 
 ## Typings

@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { NavLink, match } from 'react-router-dom';
 import * as H from 'history';
+import * as PropTypes from 'prop-types';
 
 import { PathPattern } from '../router/PathPattern';
 import { RelativeLink } from './RelativeLink';
 
 export namespace RelativeNavLink {
-  export interface Props<T>
-    extends RelativeLink.Props<T> {
+  export interface Props<T> extends RelativeLink.Props<T> {
     location?: H.Location;
     activeClassName?: string;
     activeStyle?: React.CSSProperties;
@@ -17,7 +17,13 @@ export namespace RelativeNavLink {
   }
 }
 
-export class RelativeNavLink<T> extends React.Component<RelativeNavLink.Props<T>> {
+export class RelativeNavLink<T> extends React.Component<
+  RelativeNavLink.Props<T>
+> {
+  static propTypes = {
+    pattern: PropTypes.instanceOf(PathPattern).isRequired
+};
+
   render() {
     const { children, params, pattern, ...restProps } = this.props;
     return (

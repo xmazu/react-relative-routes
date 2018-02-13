@@ -47,7 +47,6 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "history": "^4.7.2",
     "jest": "^22.3.0",
-    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
@@ -58,13 +57,13 @@
     "typescript": "^2.7.1"
   },
   "peerDependencies": {
-    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2"
   },
   "dependencies": {
-    "path-to-regexp": "^2.1.0"
+    "path-to-regexp": "^2.1.0",
+    "prop-types": "^15.6.0"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/setupTestsFramework.js",

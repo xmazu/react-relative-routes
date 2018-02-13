@@ -4581,6 +4581,10 @@ path-to-regexp@^1.0.1, path-to-regexp@^1.7.0:
   dependencies:
     isarray "0.0.1"
 
+path-to-regexp@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.1.0.tgz#7e30f9f5b134bd6a28ffc2e3ef1e47075ac5259b"
+
 path-type@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-1.1.0.tgz#59c44f7ee491da704da415da5a4070ba4f8fe441"
@@ -5156,6 +5160,12 @@ react-dom@^16.2.0:
 react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
+
+react-relative-routes@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/react-relative-routes/-/react-relative-routes-0.0.2.tgz#f6efa017d6a2823129ae678c257afe4581004d7c"
+  dependencies:
+    path-to-regexp "^2.1.0"
 
 react-router-dom@^4.2.2:
   version "4.2.2"
